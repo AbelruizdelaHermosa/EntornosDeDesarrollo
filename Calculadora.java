@@ -25,12 +25,19 @@ public class Calculadora {
 		return resultado;
 	}
 	
+	public float multiplicar(float operando1, float operando2)
+	{
+		resultado = operando1 * operando2;
+		return resultado;
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		Calculadora c1 = new Calculadora();
 		System.out.println("Método suma: "+c1.suma(1, 2));
 		System.out.println("Método resta: "+c1.resta(1, 2));
+		System.out.println("Metodo multiplicar: " + c1.multiplicar(3,2));
 
 }
 }
